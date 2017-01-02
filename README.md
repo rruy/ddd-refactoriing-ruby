@@ -3,7 +3,7 @@
 O solução de refactor do código legado esta dividida na seguinte estrutura de arquivos:
 
    - [Domain]
-   Classes contendo o core da aplicação com as classes de negócio
+   Classes contendo o core da aplicação com as classes de negócio.
    - [Infrastructure]
    Classes da camada de infrastrutura da aplicação separada da camada de negócio. Ex.: MailService.
    - [Command_handlers]
@@ -29,6 +29,6 @@ Para a solução utilizei o padrão de software strategy onde implementei a clas
 
 Caso no futuro apareça uma nova necessidade de um comportamento diferente para um outro item basta criar uma classe que herda a classe base [PaymentProductBook] e implementar o comportamento desejado no metodo execute().
 
-Quando o comando [CommandHandler::PaidOrder] for chamado ele será o responsável para delegar ao objeto [CommandHandlers::ReceivedPayment] que é o responsável de intânciar a classe que tem o comportamento esperado com base no order_item passado como parametro para o metodo execute da classe.
+Quando o comando [CommandHandler::PaidOrder] for chamado ele será o responsável para delegar ao objeto [CommandHandlers::ReceivedPayment] que é o responsável de intânciar a classe que tem o comportamento esperado com base no order_item passado como parametro para o método execute da classe.
 
 [Referência] - https://pt.wikipedia.org/wiki/Strategy

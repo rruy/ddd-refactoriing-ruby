@@ -1,4 +1,3 @@
-
 class Domain::OrderItem
   attr_reader :order, :product
 

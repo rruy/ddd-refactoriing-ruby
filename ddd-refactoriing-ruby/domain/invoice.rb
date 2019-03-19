@@ -10,5 +10,4 @@ class Domain::Invoice
   def save
     raise NotImplementedError, ''    
   end
-  
 end

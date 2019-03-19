@@ -1,6 +1,4 @@
 class Domain::Membership
-  # you can customize this class by yourself
-  
   attr_accessor :active
   attr_accessor :active_at
   attr_accessor :customer
@@ -18,5 +16,4 @@ class Domain::Membership
   def save
     #Save entity
   end
- 
 end

@@ -1,4 +1,3 @@
-
 class Domain::Product
   # use type to distinguish each kind of product: physical, book, digital, membership, etc.
   attr_reader :name, :type

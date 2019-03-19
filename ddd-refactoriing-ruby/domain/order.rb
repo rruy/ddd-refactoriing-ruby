@@ -1,16 +1,6 @@
-
 class Domain::Order
   attr_reader :customer, :items, :payment, :address, :closed_at, :status
-
-   enum status: [
-    :draft,
-    :ordering,
-    :payment,
-    :processing_payment,
-    :payment_accept,
-    :delivery,
-    :complete
-  ]
+  enum status: [:draft, :ordering, :payment, :processing_payment, :payment_accept, :delivery, :complete]
 
   def initialize(customer, overrides = {})
     @customer = customer
@@ -42,5 +32,4 @@ class Domain::Order
   def save
     raise NotImplementedError, ''    
   end
-  
 end
